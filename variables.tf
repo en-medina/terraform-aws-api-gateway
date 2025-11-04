@@ -58,7 +58,7 @@ variable "access_log_format" {
   description = "The format of the access log file."
   type        = string
   default     = <<EOF
-  {
+{
 	"requestTime": "$context.requestTime",
 	"requestId": "$context.requestId",
 	"httpMethod": "$context.httpMethod",
@@ -81,7 +81,7 @@ variable "access_log_format" {
 	"cognitoUser": "$context.identity.cognitoIdentityId",
   "user": "$context.identity.user"
 }
-  EOF
+EOF
 }
 
 # See https://docs.aws.amazon.com/apigateway/latest/developerguide/apigateway-resource-policies.html for additional
